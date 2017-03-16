@@ -14,10 +14,12 @@ export default [
             },
             {
                 path: '/signout', //退出
+                meta: { auth: true },
                 component: resolve => require(['../pages/signout/'], resolve)
             },
             {
                 path: '/home', //个人主页
+                meta: { auth: true },
                 component: resolve => require(['../pages/home/'], resolve)
             },
             {
